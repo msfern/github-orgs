@@ -1,0 +1,14 @@
+.header {
+  grid-area: header;
+  border-bottom: 1px solid var(--icon);
+  padding-bottom: 30px;
+
+  h1 {
+    font-size: 35px;
+    padding-left: 30px;
+  }
+
+  .sum {
+    color: var(--blue);
+  }
+}
