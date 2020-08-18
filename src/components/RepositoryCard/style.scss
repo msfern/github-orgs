@@ -1,0 +1,65 @@
+.repository {
+  &-card {
+    border: 1px solid var(--icon);
+    border-radius: 4px;
+    padding: 35px;
+    line-height: 1.5;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-header {
+    .title {
+      font-weight: 600;
+    }
+
+    .description {
+      color: var(--black);
+      margin: 20px 0;
+    }
+    .last-update {
+      color: var(--gray);
+    }
+  }
+
+  &-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+
+    > p {
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  }
+
+  &-footer {
+    margin-top: 20px;
+    text-align: center;
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        svg {
+          margin-left: 15px;
+        }
+      }
+      svg {
+        margin-left: 5px;
+        fill: var(--blue);
+        transition: margin-left .2s linear;
+      }
+    }
+  }
+}

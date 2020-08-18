@@ -1,0 +1,11 @@
+.main-area {
+  grid-area: main;
+  padding: 30px 40px;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .main-area {
+    overflow: inherit;
+  }
+}

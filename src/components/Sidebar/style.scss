@@ -1,0 +1,60 @@
+.sidebar {
+  grid-area: sidebar;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 4px 0 12px rgba(0,0,0,.2);
+  background: var(--sidebar);
+  
+  p, a {
+    color: var(--whiteText);
+    text-decoration: none;
+  }
+
+  a {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  svg {
+    fill: var(--blue);
+    margin-right: 5px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .company {
+    &-avatar {
+      width: 150px;
+      height: auto;
+      border: 5px solid var(--icon);
+      border-radius: 100%;
+    }
+    &-name {
+      color: var(--blue);
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    &-description {
+      margin-top: 30px;
+      line-height: 1.7;
+    }
+
+    &-location {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

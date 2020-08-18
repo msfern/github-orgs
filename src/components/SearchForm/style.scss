@@ -1,0 +1,18 @@
+.searchform {
+  width: 100%;
+  padding: 30px;
+
+  input {
+    background: var(--gray-light);
+    outline: 0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    width: 100%;
+    transition: width .2s ease-out;
+    font-size: 16px;
+
+    &:focus {
+      width: 325px;
+    }
+  }
+}

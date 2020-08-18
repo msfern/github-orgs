@@ -1,0 +1,12 @@
+.repository-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 45px;
+}
+
+@media (max-width: 768px) {
+  .repository-list  {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+  }
+}
